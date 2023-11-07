@@ -1,0 +1,2 @@
+# MyVampireSurvivorGO
+MyVampireSurvivor Gameobject version
