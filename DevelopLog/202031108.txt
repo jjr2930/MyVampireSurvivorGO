@@ -1,0 +1,19 @@
+원래는 DOTS 공부용으로 만들려고 했는데.. 개발 속도가 너무 느려서 GameObject 먼저 만들고 하려고 한다.
+
+지금까지 된것은
+- 기본 적군 만들기
+-- 적군이 플레이어 쫓아오기 구현
+-- 적군의 체력 구현
+
+- 기본 플래이어 만들기
+-- 기본 플레이어 움직임 구현
+
+- 발사체 생성 구현
+
+- 발사체 움직임 구현
+
+- ScriptableObject
+-- Enemy Stat Data
+-- Enemy Bullet Data
+-- Player Stat Data
+-- Player Bullet Data 
