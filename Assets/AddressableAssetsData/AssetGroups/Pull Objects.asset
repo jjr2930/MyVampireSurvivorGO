@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Pull Objects
+  m_EditorClassIdentifier: 
+  m_GroupName: Pull Objects
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 80f4bc89572347149b09eadc0f6a2390
+  m_SerializeEntries:
+  - m_GUID: 02dc0a9042bfaa74f94bddd9175310dc
+    m_Address: Assets/GameResources/Prefabs/Bullet.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3092817186bc8dc40a75c2e7bb5be622, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: e3cac0972b25bf245a579fb2901e0839, type: 2}
+    - {fileID: 11400000, guid: 19a08dcf98185f34dad223f882d2d3f8, type: 2}
