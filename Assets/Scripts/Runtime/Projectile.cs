@@ -63,7 +63,7 @@ namespace MyVampireSurvior
             if (collision.gameObject == this.owner)
                 return;
 
-
+            //Debug.Log($"frameCount : {FrameCounter.Instance.FrameCount}, this Id : {this.gameObject.GetInstanceID()}, collision id : {collision.gameObject.GetInstanceID()}");
             projectileTarget.OnHit(data.damage);
             ObjectPool.Instance.ReturnOne(key, this);
         }

@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01b268137a486434bba6f8637047a886, type: 3}
-  m_Name: EnemyStatData
+  m_Script: {fileID: 11500000, guid: 817109d79ed68b0419b21e0628223c67, type: 3}
+  m_Name: Enemy Item Drop Data
   m_EditorClassIdentifier: 
-  hp: 3
-  moveSpeed: 2
-  fireDelay: 1
+  totalProbability: 0

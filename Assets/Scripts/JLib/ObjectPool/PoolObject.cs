@@ -6,22 +6,22 @@ using UnityEngine;
 namespace JLib.ObjectPool
 {
     /// <summary>
-    /// Ç® ¿ÀºêÁ§Æ®ÀÇ ±âº» Å¬·¡½º
+    /// í’€ ì˜¤ë¸Œì íŠ¸ì˜ ê¸°ë³¸ í´ë˜ìŠ¤
     /// </summary>
     /// <typeparam name="KeyT"></typeparam>
     [Serializable]
     public class PoolObject<KeyT> : MonoBehaviour
     {
         /// <summary>
-        /// Ç®¿¡¼­ °ü¸®µÉ ¿ÀºêÁ§Æ®ÀÇ Å°
+        /// í’€ì—ì„œ ê´€ë¦¬ë  ì˜¤ë¸Œì íŠ¸ì˜ í‚¤
         /// </summary>
         public KeyT key;
         /// <summary>
-        /// Ç®¿¡¼­ ³ª¿Ã ¶§ ÇÒ ÇàÀ§
+        /// í’€ì—ì„œ ë‚˜ì˜¬ ë•Œ í•  í–‰ìœ„
         /// </summary>
         public virtual void OnPoped() { }
         /// <summary>
-        /// Ç®·Î ´Ù½Ã µé¾î°¥ ¶§ ÇÒ ÇàÀ§
+        /// í’€ë¡œ ë‹¤ì‹œ ë“¤ì–´ê°ˆ ë•Œ í•  í–‰ìœ„
         /// </summary>
         public virtual void OnReturned() { }
     }

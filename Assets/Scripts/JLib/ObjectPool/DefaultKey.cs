@@ -5,12 +5,14 @@ using UnityEngine;
 namespace JLib.ObjectPool
 {
     /// <summary>
-    /// JLib.ObjectPool¿¡¼­ »ç¿ëÇÒ Å° °ª ÀÌ°÷¿¡ ´ç½ÅÀÌ ¿øÇÏ´Â Å°¸¦ ÀÔ·ÂÇÏ¼¼¿ä 
+    /// JLib.ObjectPoolì—ì„œ ì‚¬ìš©í•  í‚¤ ê°’ ì´ê³³ì— ë‹¹ì‹ ì´ ì›í•˜ëŠ” í‚¤ë¥¼ ì…ë ¥í•˜ì„¸ìš” 
     /// </summary>
     public enum DefaultKey 
     {
         PlayerBullet,
         Enemy,
         EnemyBullet,
+        HPSlider,
+        FieldItem,
     }
 }

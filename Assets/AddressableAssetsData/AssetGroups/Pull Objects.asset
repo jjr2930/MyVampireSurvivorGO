@@ -22,6 +22,21 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: adcfc3921950fca4e921d84c096481d5
+    m_Address: Assets/GameResources/Prefabs/Enemy.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5c418755b53d72a409ab9c813e7b8f21
+    m_Address: Assets/GameResources/Prefabs/Enemy Bullet.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b62ead0ab8f770941a4331187fda3183
+    m_Address: Assets/GameResources/Prefabs/UI/HPSlider.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3092817186bc8dc40a75c2e7bb5be622, type: 2}
   m_SchemaSet:

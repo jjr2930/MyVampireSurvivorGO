@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -65,13 +65,13 @@ namespace JLib.ObjectPool
 
                 var poolQueue = new Queue<GeneratedT>(item.generationCount);
                 var originInstance = CreateInstance(item.value);
-                originInstance.OnReturned();
+                originInstance.gameObject.SetActive(false);
                 poolQueue.Enqueue(originInstance);
 
                 for (int i = 0; i < item.generationCount - 1; i++)
                 {
                     var instance = InstantiateUsingInstance(originInstance);
-                    instance.OnReturned();
+                    instance.gameObject.SetActive(false);
                     poolQueue.Enqueue(instance);    
                 }
 

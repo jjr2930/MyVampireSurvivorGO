@@ -65,4 +65,18 @@ MonoBehaviour:
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-    generationCount: 1200
+    generationCount: 1500
+  - key: 3
+    value:
+      m_AssetGUID: b62ead0ab8f770941a4331187fda3183
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    generationCount: 700
+  - key: 4
+    value:
+      m_AssetGUID: f6d523b362c37804db95ec1877635d84
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    generationCount: 3000

@@ -5,13 +5,18 @@ using UnityEngine;
 
 namespace MyVampireSurvior
 {
-    public class PlayerStat : MonoBehaviour
+    public class PlayerStat : MonoBehaviour, IHpGettable
     {
         [SerializeField] PlayerStatData data;
 
         [SerializeField] int currentHp = 0;
         [SerializeField] int currentExp = 0;
         [SerializeField] PlayerInventory inventory;
+
+        public float GetCurrentHpRate()
+        {
+            return currentHp / (float)data.hp;
+        }
 
         private void Awake()
         {
