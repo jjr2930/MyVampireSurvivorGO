@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3581933619424983843}
-  - component: {fileID: 5721682238046094364}
+  - component: {fileID: 1187479305729211766}
   m_Layer: 0
-  m_Name: DefualtObjectPool
+  m_Name: ObjectPool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5721682238046094364
+--- !u!114 &1187479305729211766
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,7 +41,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4146791720994811867}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f0f541a0f8f7174598471be327dd4de, type: 3}
+  m_Script: {fileID: 11500000, guid: 4079d852ca41fab4db514e4a3fabcfc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   poolConfig:
@@ -51,28 +51,28 @@ MonoBehaviour:
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-    generationCount: 200
+    generationCount: 100
   - key: 1
     value:
       m_AssetGUID: adcfc3921950fca4e921d84c096481d5
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-    generationCount: 500
+    generationCount: 1000
   - key: 2
     value:
       m_AssetGUID: 5c418755b53d72a409ab9c813e7b8f21
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-    generationCount: 1500
+    generationCount: 3000
   - key: 3
     value:
       m_AssetGUID: b62ead0ab8f770941a4331187fda3183
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-    generationCount: 700
+    generationCount: 1000
   - key: 4
     value:
       m_AssetGUID: f6d523b362c37804db95ec1877635d84
