@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4892742011497055879}
   - component: {fileID: 4070668651656891763}
   - component: {fileID: 7867097140207889376}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,6 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: 2
   data: {fileID: 11400000, guid: f68530831fbe7b14f908bede33f55fac, type: 2}
+  owner: {fileID: 0}
   target: {fileID: 0}
   lastDirection: {x: 0, y: 0, z: 0}
   selfReturnTime: 10

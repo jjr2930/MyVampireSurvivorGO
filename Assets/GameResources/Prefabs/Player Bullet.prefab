@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 4892742011497055879}
   - component: {fileID: 4070668651656891763}
   - component: {fileID: 7867097140207889376}
-  m_Layer: 0
-  m_Name: Bullet
+  m_Layer: 8
+  m_Name: Player Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -163,6 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: 0
   data: {fileID: 11400000, guid: f139d49231e19f0499ee1f507b90181a, type: 2}
+  owner: {fileID: 0}
   target: {fileID: 0}
   lastDirection: {x: 0, y: 0, z: 0}
   selfReturnTime: 10

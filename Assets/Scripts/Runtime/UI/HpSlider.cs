@@ -11,6 +11,7 @@ namespace MyVampireSurvior
     public class HpSlider : PoolObject
     {
         [SerializeField] Slider slider;
+        [SerializeField] Vector2 delta;
 
         public IHpGettable HpGetter { get; set; }
         public Canvas ParentCanvas { get; set; }
@@ -34,7 +35,7 @@ namespace MyVampireSurvior
                 return;
             }
 
-            slider.transform.localPosition = localPosition;
+            slider.transform.localPosition = localPosition + delta;
         }
     }
 }

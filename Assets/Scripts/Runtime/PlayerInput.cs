@@ -9,6 +9,7 @@ namespace MyVampireSurvior
     public class PlayerInput : MonoBehaviour
     {
         [SerializeField] PlayerStatData data;
+        [SerializeField] ProjectileSpawner bulletSpawner;
 
         // Update is called once per frame
         void Update()
@@ -37,6 +38,11 @@ namespace MyVampireSurvior
 
             direction.Normalize();
             transform.position += direction * data.moveSpeed * Time.deltaTime;
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                bulletSpawner.enabled = !bulletSpawner.enabled;
+            }
         }
     }
 

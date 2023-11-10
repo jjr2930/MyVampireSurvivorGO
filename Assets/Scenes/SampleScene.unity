@@ -753,6 +753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: 010ba14ab85d2e34e924641c1296a828, type: 2}
+  bulletSpawner: {fileID: 2054363086}
 --- !u!212 &2054363084
 SpriteRenderer:
   m_ObjectHideFlags: 0
