@@ -8,7 +8,7 @@ using UnityEngine.UI;
 namespace MyVampireSurvior
 {
 
-    public class HpSlider : DefaultPoolObject
+    public class HpSlider : PoolObject
     {
         [SerializeField] Slider slider;
 

@@ -1,13 +1,9 @@
-using JLib.ObjectPool;
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using ObjectPool = JLib.ObjectPool.Addressables.DefaultObjectPoolWithAddressables;
 
 namespace MyVampireSurvior
 {
-    public class FieldItem : DefaultPoolObject
+    public class FieldItem : PoolObject
     {
         [SerializeField]
         ItemType type;

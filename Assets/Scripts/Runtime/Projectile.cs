@@ -1,10 +1,9 @@
 using System.Collections;
 using UnityEngine;
-using ObjectPool = JLib.ObjectPool.Addressables.DefaultObjectPoolWithAddressables;
 
 namespace MyVampireSurvior
 {
-    public class Projectile : JLib.ObjectPool.DefaultPoolObject
+    public class Projectile : PoolObject
     {
         [SerializeField]
         ProjectileData data;

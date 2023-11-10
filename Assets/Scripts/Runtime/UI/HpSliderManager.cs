@@ -1,22 +1,21 @@
 using JLib.ObjectPool;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ObjectPool = JLib.ObjectPool.Addressables.DefaultObjectPoolWithAddressables;
+
 namespace MyVampireSurvior
 {
 
     public class HpSliderManager : MonoBehaviour
     {
-        [SerializeField] DefaultKey sliderKey;
+        [SerializeField] PoolKey sliderKey;
         [SerializeField] Canvas canvas;
 
         Dictionary<IHpGettable, HpSlider> hpSliderByGetter = new Dictionary<IHpGettable, HpSlider>(1024);
 
         public void AddOne(IHpGettable hpGetterble)
         {
-            var one = ObjectPool.Instance.PopOne(DefaultKey.HPSlider);
+            var one = ObjectPool.Instance.PopOne(PoolKey.HPSlider);
             one.transform.SetParent(canvas.transform);
 
             var hpSlider = one.GetComponent<HpSlider>();

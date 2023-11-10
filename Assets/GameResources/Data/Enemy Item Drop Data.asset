@@ -12,4 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 817109d79ed68b0419b21e0628223c67, type: 3}
   m_Name: Enemy Item Drop Data
   m_EditorClassIdentifier: 
-  totalProbability: 0
+  data:
+  - itemType: 1
+    probability: 100
+  - itemType: 2
+    probability: 10
+  - itemType: 3
+    probability: 1
+  totalProbability: 111

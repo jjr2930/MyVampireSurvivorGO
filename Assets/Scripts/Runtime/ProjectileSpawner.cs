@@ -9,7 +9,7 @@ namespace MyVampireSurvior
         [SerializeField] ScriptableObject fireData;
         [SerializeField] float searchingRadius;
         [SerializeField] float nextSpawnTime = 0f;
-        [SerializeField] JLib.ObjectPool.DefaultKey key;
+        [SerializeField] PoolKey key;
         [SerializeField] LayerMask targetLayer;
 
         ISpawnableData spawnableData;
@@ -50,7 +50,7 @@ namespace MyVampireSurvior
 
                     if (minTransform != null)
                     {
-                        var one = DefaultObjectPoolWithAddressables.Instance.PopOne(key);
+                        var one = ObjectPool.Instance.PopOne(key);
                         var projectile = one.GetComponent<Projectile>();
                         projectile.transform.position = this.transform.position;
                         projectile.SetOwner(this.gameObject);

@@ -1,12 +1,9 @@
-using JLib.ObjectPool;
-using JLib.ObjectPool.Addressables;
 using System;
 using UnityEngine;
-using ObjectPool = JLib.ObjectPool.Addressables.DefaultObjectPoolWithAddressables;
 
 namespace MyVampireSurvior
 {
-    public class Enemy : DefaultPoolObject , IHpGettable
+    public class Enemy : PoolObject, IHpGettable
     {
         [SerializeField] EnemyStatData statData;
         [SerializeField] EnemyItemDropData dropData;
@@ -14,7 +11,7 @@ namespace MyVampireSurvior
         [SerializeField] float moveSpeed;
         [SerializeField] Transform player;
         [SerializeField] ProjectileTarget projectileTarget;
-        [SerializeField] DefaultKey fieldItemKey;
+        [SerializeField] PoolKey fieldItemKey;
 
         HpSliderManager sliderManager;
         public HpSliderManager SliderManager

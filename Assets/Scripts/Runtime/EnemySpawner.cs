@@ -1,10 +1,4 @@
-using JLib.ObjectPool;
-using JLib.ObjectPool.Addressables;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
-using ObjectPool = JLib.ObjectPool.Addressables.DefaultObjectPoolWithAddressables;
 
 namespace MyVampireSurvior
 {
@@ -20,7 +14,7 @@ namespace MyVampireSurvior
         float nextSpawnTime;
 
         [SerializeField]
-        DefaultKey enemyKey;
+        PoolKey enemyKey;
 
         void Update()
         {

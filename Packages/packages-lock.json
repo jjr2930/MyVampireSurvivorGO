@@ -1,5 +1,15 @@
 {
   "dependencies": {
+    "com.jungyeol.jlib": {
+      "version": "https://github.com/jjr2930/JLib.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.textmeshpro": "3.0.6",
+        "com.unity.addressables": "1.21.14"
+      },
+      "hash": "a3fd2a3667bfbc7ada1da10c467e6a1a28317028"
+    },
     "com.unity.2d.animation": {
       "version": "9.0.3",
       "depth": 1,
