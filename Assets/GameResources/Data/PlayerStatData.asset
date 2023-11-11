@@ -15,3 +15,4 @@ MonoBehaviour:
   hp: 10
   moveSpeed: 10
   fireDelay: 0.1
+  startLevel: 1

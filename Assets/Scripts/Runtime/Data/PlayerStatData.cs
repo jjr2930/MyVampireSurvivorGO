@@ -10,6 +10,7 @@ namespace MyVampireSurvior
 		public int hp;
 		public int moveSpeed;
 		public float fireDelay;
+		public int startLevel;
 
 		public float FireDelay => fireDelay;
     }

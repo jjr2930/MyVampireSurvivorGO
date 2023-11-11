@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,20 +8,23 @@ namespace MyVampireSurvior
 {
     public class PlayerStat : MonoBehaviour, IHpGettable
     {
-        [SerializeField] PlayerStatData data;
+        [SerializeField] PlayerStatData statData;
+        [SerializeField] PlayerLevelUpTable levelUpTable;
 
         [SerializeField] int currentHp = 0;
-        [SerializeField] int currentExp = 0;
+        [SerializeField] int currentExperience = 0;
         [SerializeField] PlayerInventory inventory;
+        [SerializeField] int currentLevel = 0;
 
         public float GetCurrentHpRate()
         {
-            return currentHp / (float)data.hp;
+            return currentHp / (float)statData.hp;
         }
 
         private void Awake()
         {
-            currentHp = data.hp;
+            currentHp = statData.hp;
+            currentLevel = statData.startLevel;
 
             inventory.onItemPickuped += OnItemPickuped;
         }
@@ -35,18 +39,28 @@ namespace MyVampireSurvior
             switch (itemType)
             {
                 case ItemType.Exp:
-                    currentExp += 10;
+                    currentExperience += 10;
                     break;
 
                 case ItemType.BigExp:
-                    currentExp += 100;
+                    currentExperience += 100;
                     break;
 
                 case ItemType.GreatExp:
-                    currentExp += 1000;
+                    currentExperience += 1000;
                     break;
+            }
+
+            RefreshLevel();
+        }
+
+        void RefreshLevel()
+        {
+            while (levelUpTable.GetNextExperience(currentLevel) < currentExperience)
+            {
+                currentLevel++;
+                Debug.Log($"Levelup! Now {currentLevel}");
             }
         }
     }
-
 }

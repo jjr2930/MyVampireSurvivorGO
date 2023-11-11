@@ -4,17 +4,11 @@ namespace MyVampireSurvior
 {
     public class EnemySpawner : MonoBehaviour
     {
-        [SerializeField]
-        float delay = 1f;
-
-        [SerializeField]
-        float radius = 10f;
-
-        [SerializeField]
-        float nextSpawnTime;
-
-        [SerializeField]
-        PoolKey enemyKey;
+        [SerializeField] float delay = 1f;
+        [SerializeField] float radius = 10f;
+        [SerializeField] float nextSpawnTime;
+        [SerializeField] PoolKey enemyKey;
+        [SerializeField] Transform player;
 
         void Update()
         {
@@ -22,7 +16,7 @@ namespace MyVampireSurvior
             {
                 nextSpawnTime += delay;
                 var enemyOne = ObjectPool.Instance.PopOne(enemyKey);
-                enemyOne.transform.position = GetRandomPosition();
+                enemyOne.transform.position = GetRandomPosition() + player.transform.position;
             }
         }
 
