@@ -5,7 +5,7 @@ using UnityEditor;
 
 namespace MyVampireSurvior.Editor
 {
-    [CustomEditor(typeof(PlayerInventory))]
+    [CustomEditor(typeof(PlayerItemInventory))]
     public class PlayerInventoryInspector : UnityEditor.Editor
     {
         public override void OnInspectorGUI()
@@ -13,7 +13,7 @@ namespace MyVampireSurvior.Editor
             base.OnInspectorGUI();
             using (var verticalSocpe = new EditorGUILayout.VerticalScope()) 
             {
-                foreach (var item in (target as PlayerInventory).ItemCountByType)
+                foreach (var item in (target as PlayerItemInventory).ItemCountByType)
                 {
                     using (var horizontalScope = new EditorGUILayout.HorizontalScope())
                     {

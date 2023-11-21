@@ -8,7 +8,7 @@
         "com.unity.textmeshpro": "3.0.6",
         "com.unity.addressables": "1.21.14"
       },
-      "hash": "a3fd2a3667bfbc7ada1da10c467e6a1a28317028"
+      "hash": "7b798bf6b4a855d527d43304ea52a687d82a5ad6"
     },
     "com.unity.2d.animation": {
       "version": "9.0.3",
@@ -259,6 +259,15 @@
       "dependencies": {
         "com.unity.modules.ui": "1.0.0",
         "com.unity.modules.imgui": "1.0.0"
+      }
+    },
+    "com.unity.visualeffectgraph": {
+      "version": "14.0.8",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.shadergraph": "14.0.8",
+        "com.unity.render-pipelines.core": "14.0.8"
       }
     },
     "com.unity.modules.ai": {

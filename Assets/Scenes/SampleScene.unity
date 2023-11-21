@@ -225,6 +225,65 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7600003456783134139, guid: cca758d9ab0c497469b9ab182a8ab24c, type: 3}
   m_PrefabInstance: {fileID: 4064385}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &224396076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224396079}
+  - component: {fileID: 224396078}
+  - component: {fileID: 224396077}
+  m_Layer: 0
+  m_Name: IngameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &224396077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224396076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11c01e654079a014798e3b29490d2243, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateMachine: {fileID: 11400000, guid: 00da2780968817049a0ab4c1b1bd5a02, type: 2}
+--- !u!114 &224396078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224396076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 973d4ffeb4f3bc34fa0bb936b7643897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsmRunner: {fileID: 224396077}
+--- !u!4 &224396079
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224396076}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 582.8287, y: 342.44608, z: -10.644202}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &427223606 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7600003456783134139, guid: cca758d9ab0c497469b9ab182a8ab24c, type: 3}
@@ -566,55 +625,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7600003456783134139, guid: cca758d9ab0c497469b9ab182a8ab24c, type: 3}
   m_PrefabInstance: {fileID: 742615477}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &856946784
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 856946786}
-  - component: {fileID: 856946785}
-  m_Layer: 0
-  m_Name: EnemySpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &856946785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 856946784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e1ac341f23d7804a846d0b9fe3dc4d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 0.1
-  radius: 10
-  nextSpawnTime: 0
-  enemyKey: 1
-  player: {fileID: 2054363085}
---- !u!4 &856946786
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 856946784}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.14291163, y: 0.45077157, z: -0.02080913}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &947713483
 GameObject:
   m_ObjectHideFlags: 0
@@ -1186,8 +1196,9 @@ GameObject:
   - component: {fileID: 2054363088}
   - component: {fileID: 2054363083}
   - component: {fileID: 2054363086}
-  - component: {fileID: 2054363087}
   - component: {fileID: 2054363090}
+  - component: {fileID: 2054363092}
+  - component: {fileID: 2054363091}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -1295,18 +1306,6 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 128
---- !u!114 &2054363087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2054363082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff5cfd695eda53b4e96d12e638dcb0de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &2054363088
 Rigidbody2D:
   serializedVersion: 4
@@ -1385,8 +1384,37 @@ MonoBehaviour:
   levelUpTable: {fileID: 11400000, guid: 80c1f7e435eadbb4b874c6729b51734f, type: 2}
   currentHp: 0
   currentExperience: 0
-  inventory: {fileID: 2054363087}
+  inventory: {fileID: 2054363091}
   currentLevel: 0
+--- !u!114 &2054363091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054363082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78f8af62d92d92444aa13a8314465f3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2054363092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054363082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62f08fea957c6014b960f97780cc2e45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skills:
+  - {fileID: 11400000, guid: c63433ceac5e29e46a1d6fb12fddcd04, type: 2}
+  - {fileID: 11400000, guid: c63433ceac5e29e46a1d6fb12fddcd04, type: 2}
+  - {fileID: 11400000, guid: c63433ceac5e29e46a1d6fb12fddcd04, type: 2}
+  - {fileID: 11400000, guid: c63433ceac5e29e46a1d6fb12fddcd04, type: 2}
 --- !u!1001 &3650056564817277612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1492,7 +1520,7 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 2054363085}
   - {fileID: 1492238670}
-  - {fileID: 856946786}
   - {fileID: 1002191384}
   - {fileID: 947713486}
   - {fileID: 2036346838}
+  - {fileID: 224396079}

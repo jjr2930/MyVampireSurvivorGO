@@ -6,7 +6,7 @@ namespace MyVampireSurvior
 {
     public delegate void OnItemPickupDelegate(ItemType itemType, int count);
 
-    public class PlayerInventory : MonoBehaviour
+    public class PlayerItemInventory : MonoBehaviour
     {
         public event OnItemPickupDelegate onItemPickuped;
 

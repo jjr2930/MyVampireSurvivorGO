@@ -27,7 +27,7 @@ namespace MyVampireSurvior
             if (false == isPlayer)
                 return;
 
-            var playerInventory = playerInput.GetComponent<PlayerInventory>();
+            var playerInventory = playerInput.GetComponent<PlayerItemInventory>();
             if (null == playerInventory)
                 throw new InvalidOperationException("there is no playerInventory , " + playerInput.name);
 

@@ -16,7 +16,12 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 13a5bf664517d9741aecad8a41a94d77
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 28581f97b4581ee44af2e101fad96c65
+    m_Address: Assets/GameResources/CommonTextures/LocationSelectionTexture.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3092817186bc8dc40a75c2e7bb5be622, type: 2}
   m_SchemaSet:

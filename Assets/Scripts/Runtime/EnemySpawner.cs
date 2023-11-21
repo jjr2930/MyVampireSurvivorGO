@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace MyVampireSurvior
@@ -10,21 +11,28 @@ namespace MyVampireSurvior
         [SerializeField] PoolKey enemyKey;
         [SerializeField] Transform player;
 
-        void Update()
+        public void StartSpawn()
         {
-            if(Time.time >= nextSpawnTime)
+            player = FindAnyObjectByType<PlayerInput>().transform;
+            StartCoroutine(Spawn());
+        }
+
+        IEnumerator Spawn()
+        {
+            while (true)
             {
-                nextSpawnTime += delay;
                 var enemyOne = ObjectPool.Instance.PopOne(enemyKey);
                 enemyOne.transform.position = GetRandomPosition() + player.transform.position;
+
+                yield return new WaitForSeconds(delay);
             }
         }
 
         Vector3 GetRandomPosition()
         {
             float randomAngle = Random.Range(0f,360f);
-            float x = Mathf.Sin(randomAngle) * radius;
-            float y = Mathf.Cos(randomAngle) * radius;
+            float x = Mathf.Cos(randomAngle) * radius;
+            float y = Mathf.Sin(randomAngle) * radius;
             float z = 0;
 
             return new Vector3 (x, y, z);

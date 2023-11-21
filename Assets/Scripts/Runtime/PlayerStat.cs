@@ -13,7 +13,7 @@ namespace MyVampireSurvior
 
         [SerializeField] int currentHp = 0;
         [SerializeField] int currentExperience = 0;
-        [SerializeField] PlayerInventory inventory;
+        [SerializeField] PlayerItemInventory inventory;
         [SerializeField] int currentLevel = 0;
 
         public float GetCurrentHpRate()
