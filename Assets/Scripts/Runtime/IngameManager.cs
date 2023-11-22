@@ -36,17 +36,19 @@ namespace MyVampireSurvior
             }
         }
 
-        private void OnSlotButtonClicked(SkillData slotButton)
+        private void OnSlotButtonClicked(SkillData clickedSkill)
         {
-            switch (slotButton.skillType)
+            switch (clickedSkill.skillType)
             {
                 case SkillType.InstantAoE:
                 case SkillType.DotAoE:
+                    fsmRunner.SetBlackboardValue("SelectedSkill", clickedSkill as UnityEngine.Object);
                     fsmRunner.PushEvent("LocationSelectionStart");
                     break;
 
                 case SkillType.Instant:
                 case SkillType.Dot:
+                    fsmRunner.SetBlackboardValue("SelectedSkill", clickedSkill as UnityEngine.Object);
                     fsmRunner.PushEvent("TargetSelectionStart");
                     break;
                 default:

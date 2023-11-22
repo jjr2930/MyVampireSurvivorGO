@@ -41,6 +41,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orthographSize: 10
   originSize: 7.44
+  indicatorPrefab:
+    m_AssetGUID: 4c2262e7ce7f5d949970e94fc294794c
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
 --- !u!114 &-3988964472286534406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,7 +128,8 @@ MonoBehaviour:
   m_Name: GameStateMachine
   m_EditorClassIdentifier: 
   rootState: {fileID: -6945148648125666752}
-  stateMachineValues: []
+  stateMachineValues:
+  - {fileID: 9192228586812043598}
   states:
   - {fileID: -6945148648125666752}
   - {fileID: 1685052246975627602}
@@ -334,3 +340,17 @@ MonoBehaviour:
   from: {fileID: 1685052246975627602}
   to: {fileID: -6859769636161918387}
   transitionEvent: {fileID: 4421700932578132929}
+--- !u!114 &9192228586812043598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f38486a4f318284580214c7449a6852, type: 3}
+  m_Name: SelectedSkill
+  m_EditorClassIdentifier: 
+  value: {fileID: 0}
+  runtimeValue: {fileID: 0}

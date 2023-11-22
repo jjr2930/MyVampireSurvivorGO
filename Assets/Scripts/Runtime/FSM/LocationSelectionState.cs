@@ -10,7 +10,7 @@ namespace MyVampireSurvior
     {
         [SerializeField] float orthographSize = 10f;
         [SerializeField] float originSize;
-        [SerializeField] AssetReferenceT<LocationSelectionIndicator> indicatorPrefab;
+        [SerializeField] AssetReference indicatorPrefab;
         LocationSelectionIndicator indicator;
 
         public override void OnEntered(StateMachineRunner owner)
@@ -24,16 +24,18 @@ namespace MyVampireSurvior
 
             var indicatorPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             indicatorPosition.z = -1f;
-            if (null == indicatorPrefab)
-            { indicatorPrefab.InstantiateAsync(indicatorPosition, Quaternion.identity).Completed +=
+            if (null == indicator)
+            { 
+                indicatorPrefab.InstantiateAsync(indicatorPosition, Quaternion.identity).Completed +=
                 (handler) =>
                 {
-                    indicator.
+                    indicator = handler.Result.GetComponent<LocationSelectionIndicator>();
+                    indicator.SetSkillDate(owner.GetBlackboardValue<UnityEngine.Object>("SelectedSkill") as SkillData);
                 };
             }
             else
             {
-                indicator
+                indicator.SetSkillDate(owner.GetBlackboardValue<Object>("SelectedSkill") as SkillData);
             }
         }
 
